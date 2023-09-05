@@ -9,7 +9,7 @@ public class BanarasiApplication
 	public static void main(String[] args)
 	{
 		SpringApplication.run(BanarasiApplication.class, args);
-		System.out.println("************");
+		System.out.println("***********");
 	}
 
 }
