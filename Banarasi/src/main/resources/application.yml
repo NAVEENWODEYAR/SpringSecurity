@@ -1,0 +1,22 @@
+server:
+  port: 0808
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/guavadb
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: boss
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+    open-in-view: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  security:
+    user:
+      name: banarasi
+      password: banarasi
