@@ -18,7 +18,9 @@ public class CarSecurity
 //        http.httpBasic();
 //        return (SecurityFilterChain)http.build();
 
-        http.authorizeHttpRequests()
+        http
+                .csrf().disable()
+                .authorizeHttpRequests()
                 .requestMatchers("/car/test").permitAll()
                 .requestMatchers("/car").authenticated().
                 and().formLogin()
