@@ -20,7 +20,7 @@ public class CarSecurity
 
         http.authorizeHttpRequests()
                 .requestMatchers("/car/test").permitAll()
-                .requestMatchers("/car/").authenticated().
+                .requestMatchers("/car").authenticated().
                 and().formLogin()
                 .and().httpBasic();
 
