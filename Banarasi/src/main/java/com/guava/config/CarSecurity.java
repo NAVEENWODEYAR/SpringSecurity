@@ -16,7 +16,7 @@ public class CarSecurity
                 .authorizeHttpRequests()
                 .requestMatchers("/car/test").permitAll()
                 .requestMatchers("/car").authenticated()
-
+                .requestMatchers("/swagger-ui.html", "/swagger-resources/**", "/v2/api-docs").permitAll()
                 .and().formLogin()
                 .and().httpBasic();
 
