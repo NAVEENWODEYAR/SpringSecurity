@@ -20,3 +20,14 @@ spring:
     user:
       name: banarasi
       password: banarasi
+
+
+  spring.mail.properties.mail.smtp.ssl.protocols : TLSv1.2
+  spring.mail.host : smtp.gmail.com
+  spring.mail.port : 587
+  #spring.mail.username = naveenkrishnawodeyar@gmail.com
+  spring.mail.username : ${Email}
+  spring.mail.password : ${Password}
+  #spring.mail.password = tzjccfyolwkcznbd
+  spring.mail.properties.mail.smtp.auths : true
+  spring.mail.properties.mail.smtp.starttls.enable : true
