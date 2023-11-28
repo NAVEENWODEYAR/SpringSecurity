@@ -27,7 +27,7 @@ public class CarController
     }
 
     // Insert into the table,
-    @PostMapping
+    @PostMapping("/insertCars")
     public ResponseEntity<ResponseDTO> insertCar(@RequestBody CarRequest carRequest)
     {
         Car car = carService.insertCar(carRequest);
@@ -36,7 +36,7 @@ public class CarController
     }
 
     // Select * from table,
-    @GetMapping
+    @GetMapping("/getCars")
     public ResponseEntity<ResponseDTO>getCars()
     {
         List<Car> cars = carService.getCars();
