@@ -21,6 +21,7 @@ public class CarController
 
     // API
     @GetMapping("/test")
+    @ResponseStatus(code = HttpStatus.GONE)
     public String getMsg()
     {
         return carService.getMsg();
