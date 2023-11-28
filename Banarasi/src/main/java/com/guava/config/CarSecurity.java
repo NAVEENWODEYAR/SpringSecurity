@@ -15,7 +15,7 @@ public class CarSecurity
                 .csrf().disable()
                 .authorizeHttpRequests()
                 .requestMatchers("/car/test").permitAll()
-                .requestMatchers("/car").authenticated()
+                .requestMatchers("/car/getCars").authenticated()
                 .requestMatchers("/swagger-ui.html","/swagger-ui/index.html","/swagger-resources/**", "/v2/api-docs").permitAll()
                 .and().formLogin()
                 .and().httpBasic();
